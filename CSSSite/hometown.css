@@ -1,0 +1,130 @@
+/* body styles */
+body {
+    background-color: yellowgreen;
+        color: #333;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+  }
+  
+  /* heading styles */
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* paragraph styles */
+  p {
+    list-style-type: disc;
+    margin-left: 20px;
+    text-align: center;
+  }
+  
+  /* image styles */
+  li img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* list styles */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    list-style-type: disc;
+    margin-left: 0px;
+    text-align: center;
+    max-width: 100%;
+ 
+        display: block;
+        margin: auto;
+      }
+  
+  
+  /* link styles */
+  a {
+    color: #0077be;
+    text-decoration: none;
+    max-width: 100%;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* local cuisine styles */
+  .local-cuisine {
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    margin-top: 30px;
+    padding: 20px;
+  }
+  
+  .local-cuisine h2 {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .local-cuisine ul {
+    list-style-type: none;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  
+  .local-cuisine li {
+    margin-bottom: 10px;
+  }
+  
+  /* media query for small screens */
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 24px;
+    }
+    
+    h2 {
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    
+    p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    
+    li img {
+      max-width: 100%;
+      text-align: center;
+    }
+    
+    .local-cuisine {
+      padding: 10px;
+      margin-top: 20px;
+    }
+    
+    .local-cuisine h2 {
+      font-size: 20px;
+    }
+    
+  }
+  

@@ -1,0 +1,102 @@
+
+//about css
+
+/* body style */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* heading styles */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* paragraph styles */
+p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/* list styles */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+/* link styles */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* table styles */
+
+  table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: auto;
+    }
+
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* class selector */
+.skill {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* menu styles */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #444;
+}

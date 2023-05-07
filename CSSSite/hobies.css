@@ -1,0 +1,46 @@
+/* Set font styles for the entire document */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Center headings */
+  h1,
+  h2 {
+    text-align: center;
+  }
+  
+  /* Add styles to the h1 heading */
+  h1 {
+    color: red;
+    text-align: center;
+  }
+  
+  /* Add styles to the ul list */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Add styles to the li items within the ul list */
+  li {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Add styles to the images */
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  p {
+    list-style-type: disc;
+    margin-left: 20px;
+    text-align: center;
+  }
+  
