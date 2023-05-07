@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <title>My Personal Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      body {
+        background-size: cover;
+      }
+      #login-form {
+        margin: 50px auto;
+        width: 300px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      .error-message {
+        color: red;
+        margin-bottom: 10px;
+      }
+      
+    </style>
+    <script>
+      function login() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var error = document.getElementById("error-message");
+        
+        if (username === "admin" && password === "1234") {
+          alert("Login sucessfull!");
+        } else {
+          error.innerHTML = "Invalid username or password";
+        }
+      }
+      
+      function clearForm() {
+        document.getElementById("username").value = "";
+        document.getElementById("password").value = "";
+        document.getElementById("error-message").innerHTML = "";
+      }
+      
+      function resetForm() {
+        document.getElementById("login-form").reset();
+        document.getElementById("error-message").innerHTML = "";
+      }
+
+      function register() {
+        var registerBtn = document.getElementById("register-btn");
+        registerBtn.innerHTML = "We are working on it";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Welcome to my World!</h1>
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="hometown.html">Hometown</a></li>
+      </ul>
+    </nav>
+    <div id="login-form">
+      <h2>Login</h2>
+      <label for="username">Username (Hint: admin)</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password (Hint : 1234)</label>
+      <input type="password" id="password" name="password" required>
+      <input type="submit" value="Login" onclick="login()">
+      <input type="button" value="Clear" onclick="clearForm()">
+      <button id="register-btn" onclick="register()">Register</button>
+      <p></p>
+      
+      <p id="error-message"></p>
+    </div>
+    
+  </body>
+</html>
